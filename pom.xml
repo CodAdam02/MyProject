@@ -8,6 +8,8 @@
     <artifactId>MyProject</artifactId>
     <version>1</version>
 
+
+
     <build>
         <plugins>
             <plugin>
