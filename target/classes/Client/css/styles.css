@@ -1,5 +1,26 @@
 body{
     background-color: darkgrey;
-    font-style: italic;
+    text-align: center;
 }
-/*rember before you try and open the website use http://localhost:8081/client/index.html
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+font32{
+    font-size: 111px;
+
+}
+
+
+
+
+/*remember before you try and open the website use http://localhost:8081/client/index.html
