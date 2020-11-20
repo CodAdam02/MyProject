@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <title>Army Builder</title>
@@ -9,43 +7,28 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-
-
-
-
-
-<!for the building blocks of the website >
 <body>
 
-<!Navigation Bar>
 <div class="w3-container">
     <h2>Army Builder</h2>
-    <div class="w3-bar w3-blue-grey">
+    <div class="w3-bar w3-light-grey">
         <a href="#" class="w3-bar-item w3-button"onclick="location.href='http://localhost:8081/client/index.html#'">Home</a>
-        <a href="#" class="w3-bar-item w3-button"onclick="location.href=''">News</a>
-
-
-
-        <div class="w3-dropdown-hover " >
-            <button class="w3-button">Army Creator</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Dropdown</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="#" class="w3-bar-item w3-button" >New Army</a>
-                <a href="#" class="w3-bar-item w3-button">Load Army</a>
+                <a href="#" class="w3-bar-item w3-button" >Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
                 <a href="#" class="w3-bar-item w3-button">Link 3</a>
             </div>
         </div>
-
-        <div class="w3-dropdown-hover w3-right">
-            <button class="w3-button" >| Login</button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4" style="right:0">
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Login</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
                 <a href="#" class="w3-bar-item w3-button" onclick="location.href='http://localhost:8081/client/login.html#'">Login</a>
                 <a href="#" class="w3-bar-item w3-button" onclick="location.href='http://localhost:8081/client/newuser.html#'">Sign Up</a>
                 <a href="#" class="w3-bar-item w3-button">Forgotten Password</a>
             </div>
         </div>
-
-        <a href="#" class="w3-bar-item w3-button w3-right"onclick="location.href=''">Not Logged in</a>
-
         <div class="w3-dropdown-hover">
             <button class="w3-button">Admin</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -55,29 +38,19 @@
         </div>
     </div>
 </div>
-<!end of navigation bar>
-
 <br>
 
+<form id="InputUserDetails">
+
+    Username:         <label>   <input type="text" name="UserName">    </label> <br>
+    Email:            <label>   <input type="text" name="Email">        </label> <br>
+    Password:         <label>   <input type="text" name="Password">    </label> <br>
+    UserID:         <label>   <input type="text" name="UserID">    </label> <br>
+    Admin:         <label>   <input type="text" name="Admin">    </label> <br>
+
+</form>
+
+<button href="#" class="button"   onclick='addUser();'>Add User</button>
+
 </body>
-<style>
-
-</style>
-
 </html>
-
-<! Comments
-
-remember before you try and open the website use http://localhost:8081/client/index.html
-UserName, Email, Password, UserID, Admin
-
-
-https://www.w3schools.com/w3css/defaulT.asp
-use this for anything that your unsure how to implment
-
-need to change the css eventulally and implement them into the project
-
-
-use this for the js and stuff
-https://docs.google.com/presentation/d/1cgeoGTV8-kpbO5XS2MxIUY6SEKCBLmXmvMYqzIiAxP0/edit#slide=id.g996ad6cb60_0_0
->
