@@ -12,7 +12,7 @@ function getUsersList() {
         if (response.hasOwnProperty("Error")) { //checks if response from the web server has an "Error"
             alert(JSON.stringify(response));    // if it does, convert JSON object to string and alert (pop up window)
         } else {
-            formatUsersList(response);          //this function will create an HTML table of the data (as per previous lesson)
+            formatUsersList(response); //this function will create an HTML table of the data (as per previous lesson)
         }
     });
 }
@@ -25,6 +25,7 @@ function formatUsersList(myJSONArray){
     }
     document.getElementById("UsersTable").innerHTML = dataHTML;
 }
+
 
 //addUser function to add a user to the database
 function addUser() {
@@ -44,6 +45,31 @@ function addUser() {
         }                                                  //in the client folder called welcome.html
     });
 }
+
+function postUserLogin() {
+    console.log("Invoked postUserLogin() ");
+
+    var url = "/Users/login";
+    var formData = new FormData(document.getElementById('loginForm'));
+
+    fetch(url, {
+        method: "POST",
+        body: formData,
+    }).then(response => {
+        return response.json();                 //now return that promise to JSON
+    }).then(response => {
+        if (response.hasOwnProperty("Error")) {
+            alert(JSON.stringify(response));        // if it does, convert JSON object to string and alert
+        } else {
+            Cookies.set("token", response.token);
+            Cookies.set("username", response.username);
+            window.open("index.html", "_self");       //open index.html in same tab
+        }
+    });
+}
+
+
+
 
 
 
